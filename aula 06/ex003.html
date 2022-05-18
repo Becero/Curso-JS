@@ -21,12 +21,17 @@
       var n1 = Number.parseInt(window.prompt("Digite um numero:"))// string, o comendo window recebe string
       var n2 = Number.parseInt(window.prompt("Digite outro numero:"))// string
       var s = n1+n2 
+
       //Number.parseInt serve para converter para um numero Inteiro
       //Number.parseFloat serve para converter para um numero Real
       //Number tambem serve, ele deixa o sistema decidir qual tipo de dado
       //String serve para converter um dado para o tipo string
       //N.tostring faz o mesmo efeito.
-      window.alert("A soma dos valores e: " +s) //concatenaçao    
+
+      window.alert(`A soma entre ${n1} e ${n2} e igual a ${s}`) 
+
+      //template string se usa `(crase) ` e vc acessa a variavel usando $()
+         
       //(number + number) para adiçao
       //(string + string) para concatenaçao
     </script>
