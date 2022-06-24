@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com Dom</title>
+    <title>Primeiros Passos com Dom</title>
     <style>
         body{
-                background-color: blue;
+                background-color: rgb(111, 111, 221);
                 color: white;
                 font: normal 18 pt Arial;
         }
@@ -18,11 +18,20 @@
     <h1>Iniciando estudos com Dom</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendoa usar o <strong>DOM</strong> em Javascript.</p>
-    <div>Clique em Mim</div>
+    <div class="msg">Clique em Mim</div>
 
     <script>
-        var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write('esta escrito assim' + p1.innerText )
+        //window.document.write(window.document.URL)
+        //var p1 = window.document.getElementsByTagName('p')[0]
+        //window.document.write('Esta escrito assim :' + p1.innerText )
+        //p1.style.color= "blue "
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        /*window.document.write('Esta escrito assim :' + p1.innerText )
+        corpo.style.background = 'black'
+        p1.style.color= "blue "*/
+        var d  = window.document.querySelector("div.msg")
+        d.style.background = "blue"
     </script>
 </body>
 </html>
